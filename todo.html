@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="stylesheet" href="todo.css">
   <title>To_Do</title>
 </head>
+
 <body>
   <h1 id="main-heading">TO DO App</h1>
-  <input type="text" id="todo-input" placeholder="Enter a new task">
-  <button id="add-task-btn" onclick="AddTodo()">Add Task</button>
-  <p id="todo-items">
-    <!-- Tasks will be displayed here -->
+ <div class="todo-body">
 
-  </p>
+ 
+  <div class="grid-container">
+    <input type="text" id="todo-input" placeholder="Enter a new task">
+    <input type="date" name="" id="todo-date">
+    <button id="add-task-btn" class="todo-btn" onclick="AddTodo()">Add Task</button>
+  </div>
+  <div class="todo-container grid-container"></div>
+ </div>
   <script src="todo.js"></script>
 </body>
+
 </html>
